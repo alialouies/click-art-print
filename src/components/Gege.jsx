@@ -1,18 +1,23 @@
+import { render } from '@testing-library/react';
 import axios from 'axios';
 import React, {useState, useEffect} from 'react';
 
-const input = ({
-    input: "",
-} return ()
 
 function Gege() {
-axios.get(`https://www.rijksmuseum.nl/api/nl/collection?key=eQKm0Vx6&q=62672`})
-.then(function response)}
 
+   /*  constructor (props){
+        super( props);
+        this.state ={
+            query:'',
+            results: {},
+            loading: false,
+        message: ''
+        }
+    } */
 
-    return (
+   render() (
         <div>
-            <p>Gege</p>
+            <p>Search</p>
         </div>
     )
 }
