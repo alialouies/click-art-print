@@ -3,29 +3,28 @@ import axios from "axios";
 import DisplayDataAngel from "./AngelComponet"
 
 function Angel() {
-const [department, setDepartment] = useState("");
+const [dataAngel, setDataAngel] = useState([]);
 
-const getDataDepartment = () => {
+const getDataAngel = () => {
     axios
     .get("https://collectionapi.metmuseum.org/public/collection/v1/departments")
     .then((response) => {
-        console.log(response.data.departments[0].displayName); 
-        setDepartment(response.data.departments[3].displayName); 
-        
+        console.log(reponse); 
+        return response.data
     })
+    .then((data)=>setDataAngel(data[0])); 
 }; 
 
-
-
 useEffect (()=>{
-    getDataDepartment();},[]
+    getDataAngel();},[]
 )
 
     return (
         <div>
             <p>10 Pictures Angel</p>
-           <p> {department} </p> 
-            <button type="button" onClick={getDataDepartment}>Get Data</button>
+            <>
+            </>
+            <button type="button" onClick={getDataAngel}>Get Data</button>
 
         </div>
     )
