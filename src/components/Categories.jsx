@@ -13,6 +13,10 @@ function Categories() {
 
   return (
     <>
+    <div className="intro">
+      <h1>Our hottest five Art Collections, chosen by us for you.</h1>
+      <h2>click a button and find your favs!</h2>
+    </div>
     
       <Router>
           <div className="button-row">
