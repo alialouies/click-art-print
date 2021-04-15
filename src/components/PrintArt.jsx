@@ -4,8 +4,7 @@ import "../css/PrintArt.css"
 
 function PrintArt() {
     const [art, setArt] = useState(null);
-    // let price = [15, 19.99, 29.99];
-
+  
     const artData = async () => {
       try {
       
@@ -34,7 +33,6 @@ function PrintArt() {
     
     }
 
-    // console.log(randomPrice())
     return (
       <div>
        {art &&
