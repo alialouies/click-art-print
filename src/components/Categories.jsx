@@ -4,6 +4,7 @@ import Aliki from "./Aliki";
 import PrintArt from "./PrintArt";
 import Gege from "./Gege";
 import Angel from "./Angel";
+import "../css/Button.css"
 
 function Categories() {
   // In here we do our API query to test things out,
@@ -12,8 +13,9 @@ function Categories() {
 
   return (
     <>
+    
       <Router>
-          <div>
+          <div className="button-row">
                   <button>
                       <Link to={`${url}/Aliki`}>Aliki</Link>
                   </button>
