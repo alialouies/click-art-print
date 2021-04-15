@@ -1,23 +1,16 @@
-import { render } from '@testing-library/react';
-import axios from 'axios';
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react'
+import PrintArt from './PrintArt'
+import Search from './Search'
 
 
 function Gege() {
-
-   /*  constructor (props){
-        super( props);
-        this.state ={
-            query:'',
-            results: {},
-            loading: false,
-        message: ''
-        }
-    } */
-
-   render() (
+    const [query, setQuery] = useState("")
+    return (
         <div>
-            <p>Search</p>
+            <br></br>
+            <Search setQuery={setQuery} query={query}/>
+            <PrintArt query={query} />
+    
         </div>
     )
 }
