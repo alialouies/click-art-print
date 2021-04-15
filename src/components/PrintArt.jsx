@@ -8,7 +8,7 @@ function PrintArt() {
     const artData = async () => {
       try {
       
-        const res = await axios.get("https://www.rijksmuseum.nl/api/nl/collection?key=eQKm0Vx6&culture=en&involvedMaker=Charles%20Martin&f.dating.period=20&imgonly=True");
+        const res = await axios.get("https://www.rijksmuseum.nl/api/nl/collection?key=eQKm0Vx6&involvedMaker=Jean%20Baptiste%20Vanmour");
         const artArray = [];
   
         res.data.artObjects.map((el) => artArray.push([el.webImage.url, el.title, el.principalOrFirstMaker ]));
@@ -35,8 +35,9 @@ function PrintArt() {
 
     return (
       <div>
+        <div className="card-container">
        {art &&
-      //  art.slice(2, 12).map((artItem, index) => {
+      //  art.slice(0, 5).map((artItem, index) => {
             art.map((artItem, index) => {
           
               return (
@@ -48,6 +49,7 @@ function PrintArt() {
                 </div>
               );
             })}
+        </div>
       </div>
     );
   }
