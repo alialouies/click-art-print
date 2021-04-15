@@ -28,7 +28,7 @@ function Maya() {
     return (
       <div>
        {art &&
-            art.map((artItem, index) => {
+            art.slice(0,1).map((artItem, index) => {
           
               return (
                 <div className="card" key={index}>
