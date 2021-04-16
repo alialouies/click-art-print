@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "../css/PrintArt.css"
+import "../css/Search.css"
+
 
 
 
@@ -47,10 +48,16 @@ console.log(query)
           
               return (
                 <div className="card" key={index}>
-                <img src={artItem[0]} style={{ width: "90%" }} alt="" />
-                <h5>Artist: {artItem[2]}</h5>  
-                <p>Title: {artItem[1]}</p>
-                <h5>Price: {randomPrice()} €</h5>
+                  <div className="part2">
+                    <img src={artItem[0]} alt="" style={{ width: "100%" }}  />
+                  {/* </div> */}
+                    <div className="test">
+                    <h3>Artist: {artItem[2]}</h3>  
+                    <h4>Title: {artItem[1]}</h4>
+                    <h4 style={{color: "red"}}>Price: {randomPrice()} €</h4>
+                    <a>add to cart  <i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                  </div>
                 </div>
               );
             })}

@@ -38,4 +38,12 @@ button:hover {
     margin-top: 50px;
   }
 
- 
+ .search{
+    margin: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
+    border-radius: 34px;
+    padding: 10px;
+ }

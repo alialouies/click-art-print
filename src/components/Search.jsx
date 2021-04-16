@@ -1,4 +1,5 @@
 import React from 'react'
+import "../css/Button.css"
 
 function Search(props) {
     const { setQuery, query } = props;
@@ -6,7 +7,7 @@ function Search(props) {
 
 
     return (
-      <div>
+      <div className= "search">
         <input
           value={query}
           type="text"

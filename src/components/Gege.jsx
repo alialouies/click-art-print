@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import PrintArtSearch from './PrintArtSearch.jsx'
 import Search from './Search'
+import "../css/Search.css"
 
 
 function Gege() {
