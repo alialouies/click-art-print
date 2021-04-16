@@ -32,8 +32,8 @@ function Photography() {
   return (
     <div>
       <div className="intro">
-        <h1>Friedrich Carel Hisgen</h1>
-        <h2>Dutch photographer</h2>
+        <h1>The Photography collection</h1>
+        <h2>featuring dutch photographer Friedrich Carel Hisgen</h2>
       </div>
       <div className="card-container">
      {data &&
