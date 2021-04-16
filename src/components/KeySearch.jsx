@@ -4,7 +4,7 @@ import Search from './Search'
 import "../css/Search.css"
 
 
-function Gege() {
+function KeySearch() {
     const [query, setQuery] = useState("")
     return (
         <div>
@@ -16,7 +16,7 @@ function Gege() {
     )
 }
 
-export default Gege
+export default KeySearch
 
 
 
