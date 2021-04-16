@@ -14,6 +14,7 @@ function HeroSection() {
           <div>
             Here you can get The Rijks museum art collection to your home
           </div>
+          
         </div>
       </section>
     </>
