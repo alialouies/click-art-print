@@ -49,7 +49,7 @@ function Photography() {
                   <h3>Artist: {object[2]}</h3>  
                   <h4>Title: {object[1]}</h4>
                   <h4 style={{color: "red"}}>Price: {randomPrice()} €</h4>
-                  {/* <a>add to cart  <i class="fas fa-shopping-cart"></i></a> */}
+                  <a>add to cart  <i class="fas fa-shopping-cart"></i></a>
                   </div>
                 </div>
               </div>
