@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import PrintArt from './PrintArt'
+import PrintArtSearch from './PrintArtSearch.jsx'
 import Search from './Search'
 
 
@@ -9,7 +9,7 @@ function Gege() {
         <div>
             <br></br>
             <Search setQuery={setQuery} query={query}/>
-            <PrintArt query={query} />
+            <PrintArtSearch query={query} />
     
         </div>
     )
