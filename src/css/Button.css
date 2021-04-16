@@ -1,0 +1,41 @@
+.button-row {
+   text-align: center;
+    
+} 
+    
+button {
+    margin: 20px;
+    background-color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 34px;
+   
+}
+
+button > a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+button > a:hover {
+    color: white
+    
+}
+
+button:hover {
+    color: burlywood;
+    background-color: black;
+}
+
+
+.intro {
+    text-align: center;
+    /* font-family: 'Comfortaa'; */
+    /* font-weight: 700; */
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+ 
