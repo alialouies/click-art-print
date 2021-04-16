@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch } from "rea
 import Aliki from "./Aliki";
 import PrintArt from "./PrintArt";
 import Gege from "./Gege";
-import Angel from "./Angel";
+import Angel from "./Pictures";
 import "../css/Button.css"
 
 function Categories() {
@@ -24,7 +24,7 @@ function Categories() {
                       <Link to={`${url}/Aliki`}>Aliki</Link>
                   </button>
                   <button>
-                      <Link to={`${url}/Angel`}>Angel</Link>
+                      <Link to={`${url}/pictures`}>Pictures</Link>
                   </button>
                   <button>
                       <Link to={`${url}/Gege`}>Gege</Link>
@@ -35,7 +35,7 @@ function Categories() {
           </div>
         <Switch>
           <Route path={`${url}/Aliki`} component={Aliki}></Route>
-          <Route path={`${url}/Angel`} component={Angel}></Route>
+          <Route path={`${url}/pictures`} component={Angel}></Route>
           <Route path={`${url}/Gege`} component={Gege}></Route>
           <Route path={`${url}/printart`} component={PrintArt}></Route>
         </Switch>
