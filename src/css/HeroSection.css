@@ -1,0 +1,22 @@
+
+img {
+    max-width: 300px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+#hero {
+    height: 100vh;
+}
+
+#logo-container {
+
+   display: flex;
+   justify-content: center;
+   align-content: center;
+}
+
+#hero-text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}

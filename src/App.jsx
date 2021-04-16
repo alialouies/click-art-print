@@ -11,7 +11,7 @@ function App() {
     <>
       <Router>
         <Navbar/>
-        <Switch>
+        <Switch> 
           <Route path='/Home' component={Home} />
           <Route path='/shop' component={Shop} />
           <Route path='/cart' component={Cart} />
