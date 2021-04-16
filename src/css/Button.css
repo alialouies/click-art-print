@@ -14,7 +14,7 @@ button {
 
 button > a {
     text-decoration: none;
-    color: black;
+    color: #2b3033;
     font-size: 18px;
     letter-spacing: 3px;
 }
@@ -26,7 +26,7 @@ button > a:hover {
 
 button:hover {
     color: burlywood;
-    background-color: black;
+    background-color: #2b3033;
 }
 
 
