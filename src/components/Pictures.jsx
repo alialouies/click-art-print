@@ -37,7 +37,7 @@ function Pictures() {
       <div>
         <div className="intro">
           <h1>The Print Art Collection</h1>
-          <h2>featuring french artist and illustrator Charles Martin (1884–1934)</h2>
+          <h2>featuring french artist and illustrator George Barbier (1884–1934)</h2>
         </div>
         <div className="card-container">
        {art &&

@@ -4,6 +4,7 @@ import Photography from "./Photography";
 import PrintArt from "./PrintArt";
 import KeySearch from "./KeySearch";
 import Pictures from "./Pictures";
+import MetSearch from "./metsearch"
 import "../css/Button.css"
 
 function Categories() {
@@ -33,6 +34,9 @@ function Categories() {
                   <button>
                     <Link to={`${url}/printart`}>Print Art</Link>
                   </button>
+                  <button>
+                    <Link to={`${url}/metsearch`}>MET search</Link>
+                  </button>
           </div>
         <Switch>
 
@@ -40,6 +44,7 @@ function Categories() {
           <Route path={`${url}/pictures`} component={Pictures}></Route>
           <Route path={`${url}/keysearch`} component={KeySearch}></Route>
           <Route path={`${url}/printart`} component={PrintArt}></Route>
+          <Route path={`${url}/metsearch`} component={MetSearch}></Route>
         </Switch>
       </Router>
     </>

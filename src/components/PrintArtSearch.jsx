@@ -42,9 +42,7 @@ console.log(query)
     return (
       <div>
         <div className="card-container">
-       {art &&
-      //  art.slice(0, 5).map((artItem, index) => {
-            art.map((artItem, index) => {
+       {art && art.map((artItem, index) => {
           
               return (
                 <div className="card" key={index}>
