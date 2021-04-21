@@ -36,8 +36,8 @@ function Pictures() {
     return (
       <div>
         <div className="intro">
-          <h1>The Print Art Collection</h1>
-          <h2>featuring french artist and illustrator Charles Martin (1884–1934)</h2>
+          <h1>The Picture Art Collection</h1>
+          <h2>featuring the amazing artist George Barbier</h2>
         </div>
         <div className="card-container">
        {art &&
