@@ -10,7 +10,11 @@ function ApiMet(props) {
   const [result, setResult] = useState(null);
 
   const artData = async () => {
-    const searchparams = { q: query , showonly:'openAccess' };
+    const searchparams = {
+      q: query,
+      showonly: "openAccess",
+      material: "Oil",
+    };
 
     try {
       const indexres = await axios.get(
@@ -20,7 +24,7 @@ function ApiMet(props) {
       let idArray = [...indexres.data.objectIDs];
       const tempArray = [];
 
-      for (let i = 0; i <= 20; i++) {
+      for (let i = 0; i <= 5; i++) {
         const apirequestid = await axios.get(
           `https://collectionapi.metmuseum.org/public/collection/v1/objects/${idArray[i]}`
         );
@@ -60,7 +64,7 @@ function ApiMet(props) {
                   {/* </div> */}
                   <div className="test">
                     <h3> {resultItem.title}</h3>
-                    
+
                     <h4>By {resultItem.artistDisplayName}</h4>
                     <h4 style={{ color: "red" }}>Price: {randomPrice()} €</h4>
                     <a>
