@@ -9,7 +9,7 @@ function KeySearch() {
     return (
         <div>
             <br></br>
-            <Search setQuery={setQuery} query={query}/>
+      p      <Search setQuery={setQuery} query={query}/>
             <PrintArtSearch query={query} />
     
         </div>
