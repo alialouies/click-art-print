@@ -4,20 +4,23 @@ import Home from "./components/pages/Home";
 import Shop from "./components/pages/Shop";
 import Cart from "./components/pages/Cart";
 import Navbar from "./components/Navbar";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Pictures from "./components/Pictures";
 
 function App() {
-  //On click - Chage state Shopping Cart
   const [cart, setCart] = React.useState([]);
 
-  // => to add the item to cart
-  const addCart = (artProduct) => {
-    console.log(artProduct);
-    setCart(artProduct);
+  
+
+  const addCart = (product, e) => {
+    let tempState = [...cart];
+    e.preventDefault();
+    tempState.push(product)
+    setCart(tempState)
+    console.log(tempState);
   };
 
-  //
+
 
   return (
     <>
@@ -30,7 +33,8 @@ function App() {
         </Switch>
       </Router>
       <div>
-        <Pictures cart={cart} addCart={addCart} />
+        <Pictures addCart={addCart} />
+        <Cart cart={cart} />
       </div>
     </>
   );
