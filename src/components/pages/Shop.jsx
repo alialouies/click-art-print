@@ -2,11 +2,13 @@ import React from 'react'
 import ShopHeader from '../ShopHeader'
 import Categories from '../Categories'
 
-function Shop() {
+function Shop(props) {
+    const {addCart} = props;
+    
     return (
         <>
         <ShopHeader/>
-        <Categories/>
+        <Categories addCart={addCart}/>
         </>
     )
 }

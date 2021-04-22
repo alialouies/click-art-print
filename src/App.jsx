@@ -5,7 +5,6 @@ import Shop from "./components/pages/Shop";
 import Cart from "./components/pages/Cart";
 import Navbar from "./components/Navbar";
 import React, { useState, useEffect } from "react";
-import Pictures from "./components/Pictures";
 
 function App() {
   const [cart, setCart] = React.useState([]);
@@ -27,15 +26,11 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/shop" component={Shop} />
-          <Route path="/cart" component={Cart} />
+          <Route exact path="/"><Home/></Route>
+          <Route path="/shop"><Shop addCart={addCart}/></Route>
+          <Route path="/cart"><Cart cart={cart}/></Route>
         </Switch>
       </Router>
-      <div>
-        <Pictures addCart={addCart} />
-        <Cart cart={cart} />
-      </div>
     </>
   );
 }
