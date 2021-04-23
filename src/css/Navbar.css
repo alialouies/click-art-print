@@ -25,7 +25,8 @@ ul {
 }
 
 .navbar-container {
-    background-color: #2b3033;
+    /* #1E1E1E" */
+    background-color: #1D1D1D;
     padding-top: 15px;
     margin-bottom: 10px;
 }

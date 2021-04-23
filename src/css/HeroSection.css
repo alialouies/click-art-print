@@ -8,6 +8,7 @@ img {
     height: 100vh;
 }
 
+
 #logo-container {
 
    display: flex;
@@ -16,7 +17,12 @@ img {
 }
 
 #hero-text {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    text-align: center;
+}
+
+#hero-text h1 {
+    font-size: 32px;
+}
+#hero-text h2 {
+    font-size: 24px;
 }

@@ -51,7 +51,7 @@ function Photography(props) {
                   <div className="test">
                   <h3>Artist: {object[2]}</h3>  
                   <h4>Title: {object[1]}</h4>
-                  <h4 style={{color: "red"}}>Price: {price} €</h4>
+                  <h4 style={{color: "#FA1A05"}}>Price: {price} €</h4>
                   <button onClick={(e) => addCart(object, e)}>
                       add to cart <i class="fas fa-shopping-cart"></i>
                     </button>

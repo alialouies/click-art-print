@@ -11,7 +11,8 @@ function HeroSection() {
         </div>
         <div id="hero-text">
           <div>
-            <h1>Here you can get The Rijks museum art collection to your home</h1>
+            <h1>Welcome to click art & print!</h1>
+            <h2>We strive to deliver the world's greatest art conviniently to your doorstep.</h2>
           </div>
           
         </div>

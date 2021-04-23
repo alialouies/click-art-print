@@ -40,6 +40,9 @@ function CheckoutForm() {
           <label htmlFor="lastName"></label>
           <input name="lastName" id="lastName" placeholder="   Last Name" />
 
+          <label htmlFor="email"></label>
+          <input name="email" id="email" placeholder="   Email" />
+
           <label htmlFor="address"></label>
           <input name="address" id="address" placeholder="   Address" />
 

@@ -14,9 +14,11 @@
   width: 40%;
   margin-bottom: 50px;
   margin-left: 50px;
-  background-color: #222323;
+  /* background-color: #222323; */
+  background-color: #1D1D1D;
   border: solid 0.3px;
   border-color: #E8E8E8;
+  border-radius: 8px;
   /* cursor: pointer;
    */
  
