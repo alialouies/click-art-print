@@ -4,6 +4,7 @@ import Home from "./components/pages/Home";
 import Shop from "./components/pages/Shop";
 import Cart from "./components/pages/Cart";
 import Navbar from "./components/Navbar";
+import Checkout from "./components/pages/Checkout";
 import React, { useState, useEffect } from "react";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route exact path="/"><Home/></Route>
           <Route path="/shop"><Shop addCart={addCart}/></Route>
           <Route path="/cart"><Cart cart={cart}/></Route>
+          <Route path="/checkout"><Checkout /></Route>
         </Switch>
       </Router>
     </>

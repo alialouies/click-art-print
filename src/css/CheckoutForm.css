@@ -1,0 +1,23 @@
+form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 200vh;
+    align-items: center;
+
+}
+
+form > p, h1, h2, h3, h4 {
+    padding: 10px;
+}
+
+input {
+    width: 40vh;
+    height: 4vh;
+    margin: 5px;
+    border-radius: 34px;
+}
+
+#submit {
+    margin-bottom: 50px;
+}
