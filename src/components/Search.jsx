@@ -2,7 +2,7 @@ import React from 'react'
 import "../css/Button.css"
 
 function Search(props) {
-    const { setQuery, query } = props;
+    const { setQuery, query} = props;
     /* console.log (query) */
 
 

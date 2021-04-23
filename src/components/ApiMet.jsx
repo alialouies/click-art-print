@@ -5,7 +5,7 @@ import loader from "../img/loader.gif";
 
 function ApiMet(props) {
   /* const [art, setArt] = useState(null); */
-  const { query } = props;
+  const { query, price, addCart } = props;
 
   const [result, setResult] = useState(null);
 
@@ -66,10 +66,10 @@ function ApiMet(props) {
                     <h3> {resultItem.title}</h3>
 
                     <h4>By {resultItem.artistDisplayName}</h4>
-                    <h4 style={{ color: "red" }}>Price: {randomPrice()} €</h4>
-                    <a>
+                    <h4 style={{ color: "red" }}>Price: {price} €</h4>
+                    <button onClick={(e) => addCart(resultItem, e)}>
                       add to cart <i class="fas fa-shopping-cart"></i>
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import "../css/PrintArt.css"
 
 function Photography(props) {
-  const {addCart} = props;
+  const {addCart, price} = props;
   const [data, setData] = useState([]);
 
   
@@ -23,11 +23,13 @@ function Photography(props) {
   }, []);
 
 
-  const randomPrice = () => {
-    let price = ["14.99", "19.99", "29.99", "24,99"];
-    let random = price[Math.floor(Math.random() * price.length)];
-    return random;
-  }
+  // const randomPrice = () => {
+  //   let price = ["14.99", "19.99", "29.99", "24,99"];
+  //   let random = price[Math.floor(Math.random() * price.length)];
+  //   return random;
+  // }
+
+  
 
 
   return (
@@ -49,7 +51,7 @@ function Photography(props) {
                   <div className="test">
                   <h3>Artist: {object[2]}</h3>  
                   <h4>Title: {object[1]}</h4>
-                  <h4 style={{color: "red"}}>Price: {randomPrice()} €</h4>
+                  <h4 style={{color: "red"}}>Price: {price} €</h4>
                   <button onClick={(e) => addCart(object, e)}>
                       add to cart <i class="fas fa-shopping-cart"></i>
                     </button>

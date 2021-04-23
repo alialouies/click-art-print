@@ -1,6 +1,5 @@
 import React from "react";
-import img from "../img/logo.png";
-// import bw from "../img/logo-bw.png";
+import img from "../img/logo-2.png";
 import "../css/HeroSection.css";
 
 function HeroSection() {

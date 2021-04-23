@@ -6,9 +6,12 @@ import Cart from "./components/pages/Cart";
 import Navbar from "./components/Navbar";
 import Checkout from "./components/pages/Checkout";
 import React, { useState, useEffect } from "react";
+import Logo from './components/Logo'
+import Purchase from './components/pages/Purchase'
 
 function App() {
   const [cart, setCart] = React.useState([]);
+  const price = 19.99;
 
   
 
@@ -28,9 +31,10 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/"><Home/></Route>
-          <Route path="/shop"><Shop addCart={addCart}/></Route>
-          <Route path="/cart"><Cart cart={cart}/></Route>
+          <Route path="/shop"><Shop addCart={addCart} price={price}/></Route>
+          <Route path="/cart"><Cart cart={cart} price={price}/></Route>
           <Route path="/checkout"><Checkout /></Route>
+          <Route path="/purchase"><Purchase/></Route>
         </Switch>
       </Router>
     </>

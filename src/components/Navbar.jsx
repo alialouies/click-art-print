@@ -16,9 +16,9 @@ function Navbar() {
             <li>
               <Link to="/cart">Cart</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/checkout">Checkout</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>

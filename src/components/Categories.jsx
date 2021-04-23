@@ -8,7 +8,7 @@ import MetSearch from "./metsearch"
 import "../css/Button.css"
 
 function Categories(props) {
-  const {addCart} = props;
+  const {addCart, price} = props;
   // In here we do our API query to test things out,
   // we display only 10 items, and appear on clicking of category button
   let {url} = useRouteMatch();
@@ -35,18 +35,17 @@ function Categories(props) {
                   <button>
                     <Link to={`${url}/printart`}>Print Art</Link>
                   </button>
-                  <button>
+                  {/* <button>
                     <Link to={`${url}/metsearch`}>MET search</Link>
-                  </button>
+                  </button> */}
           </div>
         <Switch>
 
-          <Route path={`${url}/photography`}><Photography addCart={addCart}/></Route>
-          <Route path={`${url}/pictures`}><Pictures addCart={addCart}/></Route>
-          <Route path={`${url}/keysearch`} component={KeySearch}></Route>
-          /* <Route path={`${url}/printart`} component={PrintArt}></Route> */
-          <Route path={`${url}/metsearch`} component={MetSearch}></Route>
-          <Route path={`${url}/printart`}><PrintArt addCart={addCart}/></Route>
+          <Route path={`${url}/photography`}><Photography addCart={addCart} price={price}/></Route>
+          <Route path={`${url}/pictures`}><Pictures addCart={addCart} price={price}/></Route>
+          <Route path={`${url}/keysearch`} ><KeySearch addCart={addCart} price={price}/></Route>
+          {/* <Route path={`${url}/metsearch`} ><MetSearch addCart={addCart} price={price}/></Route> */}
+          <Route path={`${url}/printart`}><PrintArt addCart={addCart} price={price}/></Route>
         </Switch>
       </Router>
     </>

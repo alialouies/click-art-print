@@ -3,7 +3,7 @@ import axios from "axios";
 import "../css/PrintArt.css"
 
 function PrintArt(props) {
-    const {addCart} = props;
+    const {addCart, price} = props;
     const [art, setArt] = useState(null);
   
     const artData = async () => {
@@ -27,12 +27,14 @@ function PrintArt(props) {
     }, []);
   
 
-    const randomPrice = () => {
-      let price = ["14.99", "19.99", "29.99", "24,99"];
-      let random = price[Math.floor(Math.random() * price.length)];
-      return random;
+    // const randomPrice = () => {
+    //   let price = ["14.99", "19.99", "29.99", "24,99"];
+    //   let random = price[Math.floor(Math.random() * price.length)];
+    //   return random;
     
-    }
+    // }
+
+    
 
     return (
       <div>
@@ -53,7 +55,7 @@ function PrintArt(props) {
                     <div className="test">
                     <h3>Artist: {artItem[2]}</h3>  
                     <h4>Title: {artItem[1]}</h4>
-                    <h4 style={{color: "red"}}>Price: {randomPrice()} €</h4>
+                    <h4 style={{color: "red"}}>Price: {price} €</h4>
                     <button onClick={(e) => addCart(artItem, e)}>
                       add to cart <i class="fas fa-shopping-cart"></i>
                     </button>

@@ -4,13 +4,14 @@ import Search from './Search'
 import "../css/Search.css"
 
 
-function KeySearch() {
+function KeySearch(props) {
+    const {price, addCart } = props;
     const [query, setQuery] = useState("")
     return (
         <div>
             <br></br>
-            <Search setQuery={setQuery} query={query}/>
-            <PrintArtSearch query={query} />
+            {/* <Search setQuery={setQuery} query={query} addCart={addCart}/> */}
+            <PrintArtSearch query={query} addCart={addCart} price={price}/>
     
         </div>
     )
