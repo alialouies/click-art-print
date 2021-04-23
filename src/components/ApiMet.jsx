@@ -24,7 +24,7 @@ function ApiMet(props) {
       let idArray = [...indexres.data.objectIDs];
       const tempArray = [];
 
-      for (let i = 0; i <= 5; i++) {
+      for (let i = 0; i <= 30; i++) {
         const apirequestid = await axios.get(
           `https://collectionapi.metmuseum.org/public/collection/v1/objects/${idArray[i]}`
         );

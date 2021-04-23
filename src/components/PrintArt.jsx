@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../css/PrintArt.css"
 
-function PrintArt() {
+function PrintArt(props) {
+    const {addCart} = props;
     const [art, setArt] = useState(null);
   
     const artData = async () => {
@@ -53,7 +54,9 @@ function PrintArt() {
                     <h3>Artist: {artItem[2]}</h3>  
                     <h4>Title: {artItem[1]}</h4>
                     <h4 style={{color: "red"}}>Price: {randomPrice()} €</h4>
-                    <a>add to cart  <i class="fas fa-shopping-cart"></i></a>
+                    <button onClick={(e) => addCart(artItem, e)}>
+                      add to cart <i class="fas fa-shopping-cart"></i>
+                    </button>
                     </div>
                   </div>
                 </div>

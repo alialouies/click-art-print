@@ -3,7 +3,8 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import "../css/PrintArt.css"
 
-function Photography() {
+function Photography(props) {
+  const {addCart} = props;
   const [data, setData] = useState([]);
 
   
@@ -49,7 +50,9 @@ function Photography() {
                   <h3>Artist: {object[2]}</h3>  
                   <h4>Title: {object[1]}</h4>
                   <h4 style={{color: "red"}}>Price: {randomPrice()} €</h4>
-                  <a>add to cart  <i class="fas fa-shopping-cart"></i></a>
+                  <button onClick={(e) => addCart(object, e)}>
+                      add to cart <i class="fas fa-shopping-cart"></i>
+                    </button>
                   </div>
                 </div>
               </div>
