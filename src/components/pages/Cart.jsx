@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState} from 'react'
 import '../../css/Button.css'
 import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch } from "react-router-dom"
 import Checkout from './Checkout'
 
 function Cart(props) {
-    const {cart, price} = props;
+    const {cart, price, deleteProduct} = props;
+    const [totalPrice, setTotalPrice] = useState(0)
+    
+
+  useEffect(() => {
+    let temp = totalPrice;
+    let length = cart.length;
+    temp = length * price;
+    setTotalPrice(temp)
+   
+  }, [cart])
 
     function checkOut() {
        <Router>
@@ -25,12 +35,16 @@ function Cart(props) {
                     <h3>Artist: {product[2]}</h3>
                     <h4>Title: {product[1]}</h4>
                     <h4 style={{ color: "red" }}>Price: {price} €</h4>
+                    <button onClick={() => deleteProduct(index)}>Delete</button>
                   </div>
                 </div>
               </div>
          )
        } )}
        <div>
+         <div id="total" style={{color: 'white'}}>
+            Total: {totalPrice} €
+         </div>
          <button onClick={checkOut} id="checkout-btn">
            <Link to='/checkout'>Check out</Link> 
          </button>
