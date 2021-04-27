@@ -24,6 +24,13 @@ function App() {
   };
 
 
+  const deleteProduct = (index) => {
+    let tempProducts = [...cart];
+    tempProducts.splice(index, 1);
+    setCart(tempProducts);
+  }
+
+
 
   return (
     <>
@@ -32,7 +39,7 @@ function App() {
         <Switch>
           <Route exact path="/"><Home/></Route>
           <Route path="/shop"><Shop addCart={addCart} price={price}/></Route>
-          <Route path="/cart"><Cart cart={cart} price={price}/></Route>
+          <Route path="/cart"><Cart cart={cart} price={price} deleteProduct={deleteProduct}/></Route>
           <Route path="/checkout"><Checkout /></Route>
           <Route path="/purchase"><Purchase/></Route>
         </Switch>
