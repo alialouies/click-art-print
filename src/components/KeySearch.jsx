@@ -10,7 +10,7 @@ function KeySearch(props) {
     return (
         <div>
             <br></br>
-            {/* <Search setQuery={setQuery} query={query} addCart={addCart}/> */}
+            <Search setQuery={setQuery} query={query} addCart={addCart}/>
             <PrintArtSearch query={query} addCart={addCart} price={price}/>
     
         </div>
