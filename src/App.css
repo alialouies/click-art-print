@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
 
 h1, h2, h3, h4, h5, h6 {
-font-family: 'Lexend Deca';
+
 color: #E8E8E8;
 }
 
+
+
 p, a {
-font-family: 'Roboto';
 color: #E8E8E8;
 }
