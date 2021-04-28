@@ -1,14 +1,14 @@
-import React from 'react'
-import HeroSection from '../HeroSection'
-import InitialTransition from '../animation'
+import React from "react";
+import HeroSection from "../HeroSection";
+/* import InitialTransition from '../animation' */
 
 function Home() {
-    return (
-        <>
-        <InitialTransition/>
-        <HeroSection/>
-        </>
-    )
+  return (
+    <>
+      {/* <InitialTransition/> */}
+      <HeroSection />
+    </>
+  );
 }
 
-export default Home
+export default Home;
