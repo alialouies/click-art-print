@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../css/PrintArt.css"
-
+import InitialTransition from "./animation";
 function PrintArt(props) {
     const {addCart, price} = props;
     const [art, setArt] = useState(null);
@@ -37,6 +37,8 @@ function PrintArt(props) {
     
 
     return (
+      <>
+      <InitialTransition />
       <div>
         <div className="intro">
           <h1>The Print Art Collection</h1>
@@ -66,6 +68,7 @@ function PrintArt(props) {
             })}
         </div>
       </div>
+      </>
     );
   }
   

@@ -1,5 +1,6 @@
 import React from 'react'
 import "../css/Button.css"
+import InitialTransition from "./animation";
 
 function Search(props) {
     const { setQuery, query} = props;
@@ -7,6 +8,8 @@ function Search(props) {
 
 
     return (
+      <>
+      <InitialTransition />
       <div className= "search">
         <input
           value={query}
@@ -15,7 +18,7 @@ function Search(props) {
           onChange={ (event) => setQuery(event.target.value) }
         />
       </div>
-      
+      </>
     ); 
   } 
   

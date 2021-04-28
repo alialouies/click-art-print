@@ -8,6 +8,7 @@ import Checkout from "./components/pages/Checkout";
 import React, { useState, useEffect } from "react";
 import Logo from './components/Logo'
 import Purchase from './components/pages/Purchase'
+import { motion } from "framer-motion"
 
 function App() {
   const [cart, setCart] = React.useState([]);
