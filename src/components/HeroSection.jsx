@@ -1,11 +1,12 @@
 import React from "react";
 import img from "../img/logo-2.png";
 import "../css/HeroSection.css";
+import { motion } from "framer-motion";
 
 function HeroSection() {
   return (
     <>
-      <section id="hero">
+      <motion.section initial={{x: 1800, opcaticy:1}} animate={{ x: 0}} transition={{duration: 1.6, ease: [0.87, 0, 0.13, 1]}}id="hero">
         <div id="logo-container">
           <img src={img} alt="" />
         </div>
@@ -16,7 +17,7 @@ function HeroSection() {
           </div>
           
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }
