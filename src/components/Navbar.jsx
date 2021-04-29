@@ -22,6 +22,11 @@ function Navbar() {
           </ul>
         </div>
       </nav>
+      <footer className="footer">
+       <ul>
+              <Link to="/footer1">Our Service</Link>
+            </ul>
+      </footer>
     </>
   );
 }

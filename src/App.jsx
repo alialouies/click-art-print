@@ -9,6 +9,7 @@ import React, { useState, useEffect } from "react";
 import Logo from './components/Logo'
 import Purchase from './components/pages/Purchase'
 import { motion } from "framer-motion"
+import Footer from "./components/Footer"
 
 function App() {
   const [cart, setCart] = React.useState([]);
@@ -43,6 +44,7 @@ function App() {
           <Route path="/cart"><Cart cart={cart} price={price} deleteProduct={deleteProduct}/></Route>
           <Route path="/checkout"><Checkout /></Route>
           <Route path="/purchase"><Purchase/></Route>
+          <Route path="/footer1"><Footer/></Route>
         </Switch>
       </Router>
     </>

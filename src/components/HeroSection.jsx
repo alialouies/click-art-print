@@ -2,6 +2,7 @@ import React from "react";
 import img from "../img/logo-2.png";
 import "../css/HeroSection.css";
 import { motion } from "framer-motion";
+import {Link} from 'react-router-dom';
 
 function HeroSection() {
   return (
@@ -15,8 +16,7 @@ function HeroSection() {
             <h1>Welcome to click art & print!</h1>
             <h2>We strive to deliver the world's greatest art conviniently to your doorstep.</h2>
           </div>
-          
-        </div>
+        </div> 
       </motion.section>
     </>
   );
