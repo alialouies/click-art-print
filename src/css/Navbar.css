@@ -33,9 +33,28 @@ ul {
     /* background-color: red; */
 }
 
+<<<<<<< HEAD
 
 .navbar-logo img {
  margin-bottom: -10px;
     margin-top: -15px;
     margin-right: 5vh;
+=======
+.navbar-container {
+    /* #1E1E1E" */
+    background-color: #1D1D1D;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+.footer {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #1D1D1D;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+>>>>>>> dev
 }

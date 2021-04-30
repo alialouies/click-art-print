@@ -5,9 +5,10 @@ function ThankYou() {
   return (
     <>
       <div className="intro">
-        <h1>Thank you, Annemarie!</h1>
+        <h1>Thank you, Pierre!</h1>
         <h2>Your order has been placed and will be shipped to you as fast as humanly possible!</h2>
-        <h2>We sent a copy of your order to anne@marie.de</h2>
+        <h2>We sent a copy of your order to pierre@legrand.de</h2>
+        <h2>PS: We hope you enjoyed our presentation this time!</h2>
       </div>
     </>
   );

@@ -9,6 +9,8 @@ import React, { useState, useEffect } from "react";
 import Logo from './components/Logo'
 import Purchase from './components/pages/Purchase'
 import { motion } from "framer-motion"
+import Footer from "./components/Footer"
+import Form from "./components/pages/Form"
 
 function App() {
   const [cart, setCart] = React.useState([]);
@@ -31,6 +33,17 @@ function App() {
     setCart(tempProducts);
   }
 
+  useEffect(() => {
+    const data = localStorage.getItem('shownCart');
+    if (data) {
+      setCart(JSON.parse(data))
+    }
+    },[])
+
+  useEffect(() => {
+    localStorage.setItem('shownCart', JSON.stringify(cart))
+    },[cart])
+
 
 
   return (
@@ -43,6 +56,8 @@ function App() {
           <Route path="/cart"><Cart cart={cart} price={price} deleteProduct={deleteProduct}/></Route>
           <Route path="/checkout"><Checkout /></Route>
           <Route path="/purchase"><Purchase/></Route>
+          <Route path="/footer1"><Footer/></Route>
+          <Route path="/form"><Form/></Route>
         </Switch>
       </Router>
     </>

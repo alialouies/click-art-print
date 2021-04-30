@@ -6,6 +6,7 @@ import KeySearch from "./KeySearch";
 import Pictures from "./Pictures";
 import MetSearch from "./metsearch"
 import "../css/Button.css"
+import { motion } from "framer-motion";
 
 function Categories(props) {
   const {addCart, price} = props;
@@ -15,10 +16,10 @@ function Categories(props) {
 
   return (
     <>
-    <div className="intro">
+    <motion.div initial={{x: 1800, opcaticy:1}} animate={{ x: 0}} transition={{duration: 1.6, ease: [0.87, -10, 0.13, 1]}}className="intro">
       <h1>Our hottest four Art Collections, chosen by us for you.</h1>
       <h2>click a button and find your favs or search by keyword.</h2>
-    </div>
+   
     
       <Router>
           <div className="button-row">
@@ -48,6 +49,7 @@ function Categories(props) {
           <Route path={`${url}/printart`}><PrintArt addCart={addCart} price={price}/></Route>
         </Switch>
       </Router>
+      </motion.div>
     </>
   );
 }
