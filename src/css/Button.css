@@ -3,41 +3,38 @@
 }
 
 button {
-  /* border: solid 0.3px white;
-  margin: 20px;*/
-  color: white;
-  text-decoration: none;
-  padding: 9px 9px;
-  border-radius: 4px;
-  background-color: #1d1d1d;
-}
+ display: inline-block;
+ padding: 0.35em 1.2em;
+ border: 0.1em solid #FFFFFF;
+ margin: 0 0.3em 0.3em 0;
+ border-radius: 0.12em;
+ text-decoration: none;
+ font-family: 'Roboto';
+ font-weight: 300;
+ color: #FFFFFF;
+ text-align: center;
+ transition: all 0.2s;
+ background-color: transparent;
 
-button > a {
-  /* text-decoration: none;
-  /* color: #2b3033; */
-  /* color: #1D1D1D; */
-
-  /* font-size: 18px;
-  letter-spacing: 3px;
-  padding: 8px 20px;
-  border-radius: 4px;
-  color: white;
-  background-color: #1d1d1d; */
-}
-
-button :hover {
-  /* color: black; */
-  /* background-color: #4dc9f0;
-  border-color: transparent; */
-
-  background-color: red;
 }
 
 button:hover {
-  /* color: black;
-  /* background-color: #4dc9f0; 
-  border-color: white; */
+  color: black;
+  background-color: white;
+ 
 }
+
+a:hover {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
 
 .intro {
   text-align: center;

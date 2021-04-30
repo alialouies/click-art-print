@@ -59,6 +59,7 @@ function App() {
           <Route path="/footer1"><Footer/></Route>
           <Route path="/form"><Form/></Route>
         </Switch>
+        
       </Router>
     </>
   );

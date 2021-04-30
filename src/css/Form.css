@@ -120,6 +120,7 @@
   border: none;
   color: #fff;
   font-size: 1rem;
+  margin-left: 15px;
 }
 
 .form-input-btn:hover {

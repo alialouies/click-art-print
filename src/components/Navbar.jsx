@@ -1,5 +1,5 @@
 import "../css/Navbar.css";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 import img from "../img/logo-2.png";
 
 function Navbar() {
@@ -8,10 +8,12 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
           <ul>
-          <li>
-              <Link to="/" className="navbar-logo"><img src={img} width={120} height={120}/></Link>
+            <li>
+              <Link to="/" className="navbar-logo">
+                <img src={img} width={120} height={120} />
+              </Link>
             </li>
-           
+
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -21,7 +23,7 @@ function Navbar() {
             <li>
               <Link to="/cart">Cart</Link>
             </li>
-         
+
             {/* <li>
               <Link to="/checkout">Checkout</Link>
             </li> */}
@@ -29,10 +31,14 @@ function Navbar() {
         </div>
       </nav>
       <footer className="footer">
-       <ul className="footer">
-              <Link to="/footer1">Our Mission</Link>
-              <Link to="/form">Sign up</Link>
-            </ul>
+        <ul className="footer">
+          <li>
+            <Link to="/footer1">Our Mission</Link>
+          </li>
+          <li>
+            <Link to="/form">Sign up</Link>
+          </li>
+        </ul>
       </footer>
     </>
   );
