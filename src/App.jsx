@@ -33,6 +33,17 @@ function App() {
     setCart(tempProducts);
   }
 
+  useEffect(() => {
+    const data = localStorage.getItem('shownCart');
+    if (data) {
+      setCart(JSON.parse(data))
+    }
+    },[])
+
+  useEffect(() => {
+    localStorage.setItem('shownCart', JSON.stringify(cart))
+    },[cart])
+
 
 
   return (
