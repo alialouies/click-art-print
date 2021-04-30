@@ -62,3 +62,7 @@ a {
 a {
   cursor: pointer;
 }
+
+.card {
+  margin-top: 50px;
+}
