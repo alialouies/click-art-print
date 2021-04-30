@@ -24,14 +24,4 @@ img {
   font-size: 24px;
 }
 
-.footer {
-  margin-top: 1rem;
-  padding: 1rem;
-  background-color: rgb(27, 27, 26);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  font-size: 20px;
-  color: white;
-}
+

@@ -10,6 +10,7 @@ import Logo from './components/Logo'
 import Purchase from './components/pages/Purchase'
 import { motion } from "framer-motion"
 import Footer from "./components/Footer"
+import Form from "./components/pages/Form"
 
 function App() {
   const [cart, setCart] = React.useState([]);
@@ -45,6 +46,7 @@ function App() {
           <Route path="/checkout"><Checkout /></Route>
           <Route path="/purchase"><Purchase/></Route>
           <Route path="/footer1"><Footer/></Route>
+          <Route path="/form"><Form/></Route>
         </Switch>
       </Router>
     </>

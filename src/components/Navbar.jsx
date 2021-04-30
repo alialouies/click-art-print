@@ -23,8 +23,9 @@ function Navbar() {
         </div>
       </nav>
       <footer className="footer">
-       <ul>
-              <Link to="/footer1">Our Service</Link>
+       <ul className="footer">
+              <Link to="/footer1">Our Mission</Link>
+              <Link to="/form">Sign up</Link>
             </ul>
       </footer>
     </>
