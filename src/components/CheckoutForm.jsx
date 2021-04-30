@@ -79,6 +79,15 @@ function CheckoutForm() {
           </button>
         </form>
       </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
     </>
   );
 }
