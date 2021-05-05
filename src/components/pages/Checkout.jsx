@@ -1,9 +1,10 @@
 import React from 'react'
 import CheckoutForm from '../CheckoutForm'
-function Checkout() {
+function Checkout(props) {
+    const { state, handleChange} = props;
     return (
         <div>
-            <CheckoutForm />
+            <CheckoutForm state={state} handleChange={handleChange}/>
         </div>
     )
 }
