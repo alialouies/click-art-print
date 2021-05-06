@@ -1,0 +1,23 @@
+.footer {
+    padding: 8px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 0;
+    border-top-style: solid;
+    border-top-width: thin;
+    border-bottom-style: none;
+    background-color: #17181c;
+  }
+
+  .footer ul {
+    justify-content: space-around;
+  } 
+
+
+  .footer a:hover {
+    color: #e8e8e8;
+    border-bottom: double #ff1304;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }

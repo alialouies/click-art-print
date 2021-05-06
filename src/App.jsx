@@ -41,6 +41,10 @@ function App() {
     localStorage.setItem('shownCart', JSON.stringify(cart))
     },[cart])
 
+  const deleteStorage = () => {
+    localStorage.removeItem("shownCart");
+  }
+
 
   const [state, setState] = React.useState({
       firstName: "",
@@ -65,13 +69,14 @@ function App() {
 
   return (
     <>
+    <div id="main">
       <Router>
         <Navbar />
         <Switch>
           <Route exact path="/"><Home/></Route>
           <Route path="/shop"><Shop addCart={addCart} price={price}/></Route>
           <Route path="/cart"><Cart cart={cart} price={price} deleteProduct={deleteProduct}/></Route>
-          <Route path="/checkout"><Checkout state={state} handleChange={handleChange}/></Route>
+          <Route path="/checkout"><Checkout state={state} handleChange={handleChange} deleteStorage={deleteStorage}/></Route>
           <Route path="/purchase"><Purchase state={state}/></Route>
           <Route path="/footer1"><Footer/></Route>
           <Route path="/form"><Form/></Route>
@@ -84,6 +89,7 @@ function App() {
       </Switch>
       < Footer />
       </Router>
+      </div>
     </>
   );
 }

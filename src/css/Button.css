@@ -33,9 +33,6 @@ a {
 }
 
 
-
-
-
 .intro {
   text-align: center;
   /* font-family: 'Comfortaa'; */
@@ -54,9 +51,14 @@ a {
   padding: 10px;
 }
 
-#checkout-btn {
-  margin-left: 100vh;
-  /* width: 20vh; */
+#total-check {
+  position: relative;
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+#total, #checkout-btn {
+  margin-bottom: 15px;
 }
 
 a {

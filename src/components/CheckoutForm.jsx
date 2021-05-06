@@ -5,7 +5,7 @@ import Purchase from './pages/Purchase'
 import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch } from "react-router-dom"
 
 function CheckoutForm(props) {
-  const {state, handleChange} = props;
+  const {state, handleChange, deleteStorage} = props;
 
   function confirmPurchase() {
     <Router>
@@ -14,6 +14,7 @@ function CheckoutForm(props) {
         </Route>
       </Switch>
     </Router>;
+    deleteStorage();
   }
 
   return (
@@ -60,7 +61,7 @@ function CheckoutForm(props) {
             id="zipCode" 
             placeholder="   Zip Code"
             value={state.zipCode}
-            onChange={handleChange} /> />
+            onChange={handleChange} />
 
           <label htmlFor="city"></label>
           <input 
@@ -106,15 +107,6 @@ function CheckoutForm(props) {
           </button>
         </form>
       </div>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
     </>
   );
 }

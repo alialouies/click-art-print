@@ -3,6 +3,7 @@ import '../../css/Button.css'
 import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch } from "react-router-dom"
 import Checkout from './Checkout'
 
+
 function Cart(props) {
     const {cart, price, deleteProduct} = props;
     const [totalPrice, setTotalPrice] = useState(0)
@@ -41,7 +42,8 @@ function Cart(props) {
               </div>
          )
        } )}
-       <div>
+       {cart.length !== 0 &&
+       <div id="total-check">
          <div id="total" style={{color: 'white'}}>
             Total: {totalPrice} €
          </div>
@@ -49,6 +51,8 @@ function Cart(props) {
            <Link to='/checkout'>Check out</Link> 
          </button>
        </div>
+       }
+       
        </>
     )
 }
