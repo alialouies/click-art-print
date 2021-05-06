@@ -9,8 +9,9 @@ import React, { useState, useEffect } from "react";
 import Logo from './components/Logo'
 import Purchase from './components/pages/Purchase'
 import { motion } from "framer-motion"
-import Footer from "./components/Footer"
+import OurMission from "./components/OurMission"
 import Form from "./components/pages/Form"
+import Footer from "./components/Footer"
 
 function App() {
   const [cart, setCart] = React.useState([]);
@@ -57,8 +58,11 @@ function App() {
           <Route path="/checkout"><Checkout /></Route>
           <Route path="/purchase"><Purchase/></Route>
         </Switch>
-        <Route path="/footer1"><Footer/></Route>
+        <Switch>
+        <Route path="/ourmission"><OurMission /></Route>
         <Route path="/form"><Form/></Route>
+      </Switch>
+      < Footer />
       </Router>
     </>
   );
