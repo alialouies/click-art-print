@@ -1,10 +1,12 @@
 import React from 'react'
 import ThankYou from '../ThankYou'
 
-function Purchase() {
+function Purchase(props) {
+    const { state } = props;
+
     return (
         <>
-        <ThankYou/>
+        <ThankYou state={state}/>
         </>
     )
 }

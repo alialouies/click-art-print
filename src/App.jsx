@@ -16,8 +16,6 @@ function App() {
   const [cart, setCart] = React.useState([]);
   const price = 19.99;
 
-  
-
   const addCart = (product, e) => {
     let tempState = [...cart];
     e.preventDefault();
@@ -25,7 +23,6 @@ function App() {
     setCart(tempState)
     console.log(tempState);
   };
-
 
   const deleteProduct = (index) => {
     let tempProducts = [...cart];
@@ -45,6 +42,26 @@ function App() {
     },[cart])
 
 
+  const [state, setState] = React.useState({
+      firstName: "",
+      lastName: "",
+      email: "",
+      address: "",
+      zipCode: "",
+      creditCardNumber: "",
+      expirationDate: "",
+      cvv: ""
+  })
+
+  const handleChange = (evt) => {
+    const value = evt.target.value;
+    setState({
+      ...state,
+      [evt.target.name]: value
+    });
+    console.log(value)
+  }
+
 
   return (
     <>
@@ -54,8 +71,8 @@ function App() {
           <Route exact path="/"><Home/></Route>
           <Route path="/shop"><Shop addCart={addCart} price={price}/></Route>
           <Route path="/cart"><Cart cart={cart} price={price} deleteProduct={deleteProduct}/></Route>
-          <Route path="/checkout"><Checkout /></Route>
-          <Route path="/purchase"><Purchase/></Route>
+          <Route path="/checkout"><Checkout state={state} handleChange={handleChange}/></Route>
+          <Route path="/purchase"><Purchase state={state}/></Route>
           <Route path="/footer1"><Footer/></Route>
           <Route path="/form"><Form/></Route>
         </Switch>
