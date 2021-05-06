@@ -55,7 +55,7 @@ function Pictures(props) {
                   <div className="test">
                     <h3>Artist: {artItem[2]}</h3>
                     <h4>Title: {artItem[1]}</h4>
-                    <h4 style={{ color: "#FA1A05" }}>Price: {price} €</h4>
+                    <h4>Price: {price} €</h4>
 
                     <button onClick={(e) => addCart(artItem, e)}>
                       add to cart <i class="fas fa-shopping-cart"></i>

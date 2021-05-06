@@ -7,6 +7,7 @@ li > a {
     color: #E8E8E8;
     
     padding-right: -300px;
+
 }
 
 li {
@@ -14,15 +15,13 @@ li {
 }
 
 li > a:hover {
-    color: #FF1304;
-    text-decoration: underline;
+    
 }
 
 ul {
     list-style: none;
     display: flex;
-
-    justify-content: space-around;
+    justify-content: center;
     align-items: baseline;
     border-bottom-style:solid;
     border-bottom-width: thin; 
@@ -33,10 +32,24 @@ ul {
     /* background-color: red; */
 }
 
+#list-wrapper {
+    display: flex;
+}
+
+#list-wrapper a:hover {
+    color: #E8E8E8;
+    border-bottom: double #FF1304;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+#list-wrapper li {
+  padding: 20px;
+}
+
 
 .navbar-logo img {
- margin-bottom: -10px;
-    margin-top: 10px;
+    margin-bottom: -20px;
+    margin-top: 5px;
     margin-right: 5vh;
 }
 .footer {

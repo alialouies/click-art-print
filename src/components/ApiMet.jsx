@@ -68,7 +68,7 @@ function ApiMet(props) {
                     <h3> {resultItem.title}</h3>
 
                     <h4>By {resultItem.artistDisplayName}</h4>
-                    <h4 style={{ color: "red" }}>Price: {price} €</h4>
+                    <h4>Price: {price} €</h4>
                     <button onClick={(e) => addCart(resultItem, e)}>
                       add to cart <i class="fas fa-shopping-cart"></i>
                     </button>
