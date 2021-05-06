@@ -34,7 +34,7 @@ function Cart(props) {
                   <div className="test">
                     <h3>Artist: {product[2]}</h3>
                     <h4>Title: {product[1]}</h4>
-                    <h4 style={{ color: "red" }}>Price: {price} €</h4>
+                    <h4>Price: {price} €</h4>
                     <button onClick={() => deleteProduct(index)}>Delete</button>
                   </div>
                 </div>
@@ -49,13 +49,6 @@ function Cart(props) {
            <Link to='/checkout'>Check out</Link> 
          </button>
        </div>
-       <br/>
-       <br/>
-       <br/>
-       <br/>
-       <br/>
-       <br/>
-       <br/>
        </>
     )
 }

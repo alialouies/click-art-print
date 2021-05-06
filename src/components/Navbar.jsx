@@ -8,21 +8,25 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
           <ul>
-            <li>
-              <Link to="/" className="navbar-logo">
-                <img src={img} width={120} height={120} />
-              </Link>
-            </li>
+           <div id="logo">
+              <li>
+                <Link to="/" className="navbar-logo">
+                  <img src={img} width={120} height={120} />
+                </Link>
+              </li>
+           </div>
 
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/shop">Shop</Link>
-            </li>
-            <li>
-              <Link to="/cart">Cart</Link>
-            </li>
+            <div id="list-wrapper">
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/shop">Shop</Link>
+              </li>
+              <li>
+                <Link to="/cart">Cart</Link>
+              </li>
+            </div>
 
             {/* <li>
               <Link to="/checkout">Checkout</Link>
