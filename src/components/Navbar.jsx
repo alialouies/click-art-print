@@ -30,16 +30,7 @@ function Navbar() {
           </ul>
         </div>
       </nav>
-      <footer className="footer">
-        <ul className="footer">
-          <li>
-            <Link to="/footer1">Our Mission</Link>
-          </li>
-          <li>
-            <Link to="/form">Sign up</Link>
-          </li>
-        </ul>
-      </footer>
+     
     </>
   );
 }

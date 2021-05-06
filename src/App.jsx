@@ -6,10 +6,11 @@ import Cart from "./components/pages/Cart";
 import Navbar from "./components/Navbar";
 import Checkout from "./components/pages/Checkout";
 import React, { useState, useEffect } from "react";
-import Logo from './components/Logo'
 import Purchase from './components/pages/Purchase'
 import Footer from "./components/Footer"
+import OurMission from "./components/OurMission"
 import Form from "./components/pages/Form"
+
 
 function App() {
   const [cart, setCart] = React.useState([]);
@@ -74,8 +75,14 @@ function App() {
           <Route path="/purchase"><Purchase state={state}/></Route>
           <Route path="/footer1"><Footer/></Route>
           <Route path="/form"><Form/></Route>
+          <Route path="/checkout"><Checkout /></Route>
+          <Route path="/purchase"><Purchase/></Route>
         </Switch>
-        
+        <Switch>
+        <Route path="/ourmission"><OurMission /></Route>
+        <Route path="/form"><Form/></Route>
+      </Switch>
+      < Footer />
       </Router>
     </>
   );
