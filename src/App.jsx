@@ -56,10 +56,9 @@ function App() {
           <Route path="/cart"><Cart cart={cart} price={price} deleteProduct={deleteProduct}/></Route>
           <Route path="/checkout"><Checkout /></Route>
           <Route path="/purchase"><Purchase/></Route>
-          <Route path="/footer1"><Footer/></Route>
-          <Route path="/form"><Form/></Route>
         </Switch>
-        
+        <Route path="/footer1"><Footer/></Route>
+        <Route path="/form"><Form/></Route>
       </Router>
     </>
   );
