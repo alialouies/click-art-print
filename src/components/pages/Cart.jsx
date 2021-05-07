@@ -44,9 +44,9 @@ function Cart(props) {
        } )}
        {cart.length !== 0 &&
        <div id="total-check">
-         <div id="total" style={{color: 'white'}}>
+         <h3 id="total" style={{color: 'white'}}>
             Total: {totalPrice} €
-         </div>
+         </h3>
          <button onClick={checkOut} id="checkout-btn">
            <Link to='/checkout'>Check out</Link> 
          </button>

@@ -61,6 +61,10 @@ a {
   margin-bottom: 15px;
 }
 
+#checkout-btn {
+  margin-left: 20px;
+}
+
 a {
   cursor: pointer;
 }

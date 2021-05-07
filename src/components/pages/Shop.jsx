@@ -8,9 +8,9 @@ function Shop(props) {
 
   return (
     <>
-      <InitialTransition />
-      <ShopHeader />
-      <Categories addCart={addCart} price={price} />
+          <InitialTransition />
+          <ShopHeader />
+          <Categories addCart={addCart} price={price} />
     </>
   );
 }
