@@ -4,7 +4,7 @@ import Photography from "./Photography";
 import PrintArt from "./PrintArt";
 import KeySearch from "./KeySearch";
 import Pictures from "./Pictures";
-import MetSearch from "./metsearch"
+/* import MetSearch from "./metsearch" */
 import "../css/Button.css"
 import { motion } from "framer-motion";
 
@@ -36,16 +36,16 @@ function Categories(props) {
                   <button>
                     <Link to={`${url}/printart`}>Print Art</Link>
                   </button>
-                  <button>
+                  {/* <button>
                     <Link to={`${url}/metsearch`}>MET search</Link>
-                  </button>
+                  </button> */}
           </div>
         <Switch>
 
           <Route path={`${url}/photography`}><Photography addCart={addCart} price={price}/></Route>
           <Route path={`${url}/pictures`}><Pictures addCart={addCart} price={price}/></Route>
           <Route path={`${url}/keysearch`} ><KeySearch addCart={addCart} price={price}/></Route>
-          <Route path={`${url}/metsearch`} ><MetSearch addCart={addCart} price={price}/></Route>
+          {/* <Route path={`${url}/metsearch`} ><MetSearch addCart={addCart} price={price}/></Route> */}
           <Route path={`${url}/printart`}><PrintArt addCart={addCart} price={price}/></Route>
         </Switch>
       </Router>

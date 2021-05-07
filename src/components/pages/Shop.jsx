@@ -8,9 +8,11 @@ function Shop(props) {
 
   return (
     <>
-          <InitialTransition />
-          <ShopHeader />
-          <Categories addCart={addCart} price={price} />
+      <div className="topmargin" style={{ marginTop: 50 }}>
+        <InitialTransition />
+        <ShopHeader />
+        <Categories addCart={addCart} price={price} />
+      </div>
     </>
   );
 }
