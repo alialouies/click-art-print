@@ -35,6 +35,7 @@ function Cart(props) {
                   <div className="test">
                     <h3>Artist: {product[2]}</h3>
                     <h4>Title: {product[1]}</h4>
+                    <h4>Size: 59.4 x 84.1 cm</h4>
                     <h4>Price: {price} €</h4>
                     <button onClick={() => deleteProduct(index)}>Delete</button>
                   </div>
